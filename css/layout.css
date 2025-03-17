@@ -1,0 +1,418 @@
+body{
+}
+header{
+ 
+  position: absolute;
+  width: 100%;
+}
+header nav{
+  width: 1440px;
+  margin: 0 auto;
+  height: 70px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+}
+header h1{
+  grid-column: 1;
+  grid-row: 2;
+}
+header ul.gnb{
+  display: flex;
+  gap: 20px;
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: end;
+}
+header ul.gnb>li{
+}
+header ul.gnb>li>a{
+  
+}
+header ul.gnb li ul.sub{
+  
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 15px;
+}
+header ul.gnb li:hover ul.sub {
+  
+  display: block;
+}
+header ul.gnb li ul.sub li{
+  
+}
+header ul.gnb li ul.sub li a{
+  
+}
+header ul.enb{
+  text-transform: uppercase;
+  display: flex;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  background-color: #334242;
+  color: white;
+  font-size: 12px;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-right: calc((1903px - 1440px) / -2);
+  margin-left: calc((1903px - 1440px) / -2);
+  padding-right: calc((1903px - 1440px) / 2);
+  padding-left: calc((1903px - 1440px) / 2);
+  height: 100%;
+  align-items: center;
+}
+header ul.enb li{
+  
+}
+header ul.enb a{
+  
+  color: white;
+}
+body>div{
+  height: 100%;
+  display: flex; /* 정렬할 요소의 부모에게 지정. 기본으로 수평정렬이 됨 */
+  justify-content: center; /* 좌우정렬: 중앙 */
+  align-items: center; /* 수직정렬: 중앙 */
+  /*! background-image: url(../img/title1.png),linear-gradient(to top, #55ebaa 0%, #e0d0d0 100%); */
+  background-repeat: no-repeat;
+  background-position: bottom,center;
+  background-size: 7%, cover;
+  background-image: url(../img/innovative.png),url(https://images.unsplash.com/photo-1631961036329-53295785f57f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+body>div h2{
+  color: black;
+  font-size: 36px;
+  /*! background-color: #666; */
+  /*! border-radius: 10px; */
+  padding: 10px;
+  line-height: 1;
+}
+body > div a{
+  
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  font-size: 0;
+  width: 40px;
+  height: 60px;
+  background-color: rgba(0,0,0,0.4);
+  border: 3px solid rgba(255,255,255,0.3);
+  border-radius: 20px;
+  animation-name: scroll;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  /*! background-image: url(../img/svg/arrow-right-solid.svg); */
+  /*! background-size: 44%; */
+  /*! background-position: center; */
+  /*! background-repeat: no-repeat; */
+  /*! transform: rotate(90deg); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 2px;
+}
+body > div a::before{
+  content: "";
+  width: 30%;
+  height: 30%;
+  display: block;
+  background-image: url(../img/svg/arrow-right-solid.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(90deg);
+  background-position: center;
+}
+body > div a::after{
+  content: "● ●";
+  font-size: 5px;
+  color: white;
+  transform: translateX(0.2px) rotate(90deg);
+  transform-origin: 50% 50%;
+  line-height: 1;
+  animation-name: colorC;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes colorC{
+  0%{
+    color: #fff;
+  }
+  100%{
+    color: yellow;
+  }
+}
+@keyframes scroll{
+  0%{
+     bottom: 30px;
+  }
+  100%{
+     bottom: 50px;
+  }
+}
+main{
+  
+}
+section{
+  min-height: 906px;
+  height: 100vh;
+}
+/* FAQ */
+main section#faq{
+  
+  background-image: url(../img/faq_bg2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main section#faq div{
+  
+  height: 100%;
+}
+main section#faq div h2{
+  
+}
+main section#faq div p{
+  
+  line-height: 1.6;
+}
+main section#faq div ul{
+  
+  display: flex;
+  gap: 20px;
+}
+main section#faq div ul li{
+  
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+  border: 1px solid transparent;
+}
+main section#faq div ul li:hover{
+  
+  border: 1px solid blue;
+}
+main section#faq div ul li h3{
+  
+}
+main section#faq div ul li:hover h3{
+  
+  color: blue;
+}
+main section#faq div ul li::before{
+  content: "1";
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section#faq div ul li:nth-child(1)::before{
+  content: "1";
+}
+main section#faq div ul li:nth-child(2)::before{
+  content: "2";
+}
+main section#faq div ul li:nth-child(3)::before{
+  content: "3";
+}
+main section#faq div ul li:nth-child(4)::before{
+  content: "4";
+}
+
+main section#faq div > a{
+}
+main section#faq div > a::after{
+}
+main section#faq div > a:hover{
+}
+
+/* Portfolio */
+main section#portfolio{
+  
+  background-color: #363b3e;
+}
+main section#portfolio div{
+  
+  /*! padding: 50px 0; */
+  position: relative;
+}
+main section#portfolio div h2{
+  
+}
+main section#portfolio div p{
+  
+  transform: translateY(-100%);
+}
+main section#portfolio div ul{
+  
+  display: flex;
+  flex-wrap: wrap;
+}
+main section#portfolio div ul li{
+  
+  width: 25%;
+  height: 214px;
+  background-position: center;
+  background-size: cover;
+}
+main section#portfolio div ul li:nth-child(odd){
+  
+  background-color: rgba(255,0,0,0.4);
+}
+main section#portfolio div ul li:nth-child(even){
+  
+  background-color: rgba(0,0,225,0.2);
+}
+main section#portfolio div ul li:nth-child(1){
+  background-image: url(../img/po1.jpg);
+}
+
+main section#portfolio div ul li:nth-child(2){
+  background-image: url(../img/po2.jpg);
+}
+
+main section#portfolio div ul li:nth-child(3){
+  background-image: url(../img/po3.jpg);
+}
+
+main section#portfolio div ul li:nth-child(4){
+  background-image: url(../img/po4.jpg);
+}
+
+main section#portfolio div ul li:nth-child(5){
+  background-image: url(../img/po5.jpg);
+}
+
+main section#portfolio div ul li:nth-child(6){
+  background-image: url(../img/po6.jpg);
+}
+
+main section#portfolio div ul li:nth-child(7){
+  background-image: url(../img/po7.jpg);
+}
+
+main section#portfolio div ul li:nth-child(8){
+  background-image: url(../img/po8.jpg);
+}
+
+main section#portfolio div ul li:nth-child(9){
+  background-image: url(../img/po9.jpg);
+}
+
+main section#portfolio div ul li:nth-child(10){
+  background-image: url(../img/po10.jpg);
+}
+
+main section#portfolio div ul li:nth-child(11){
+  background-image: url(../img/po11.jpg);
+}
+
+main section#portfolio div ul li:nth-child(12){
+  background-image: url(../img/po12.jpg);
+}
+main section#portfolio div ul li a{
+  
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+main section#portfolio div ul li:hover a{
+  
+  background-color: rgba(0,0,0,0.5);
+}
+main section#portfolio div ul li a span{
+  
+  border: 1px solid white;
+  padding: 10px;
+  display: block;
+  opacity: 0;
+  color: #fff;
+  transition: 0.5s;
+  transform: translateY(10%);
+}
+main section#portfolio div ul li:hover a span {
+  opacity: 1;
+  transform: translateY(0%);
+}
+main section#portfolio div ul li a span:hover {
+  
+  background-color: #fff;
+  color: #000;
+}
+main section#portfolio div > a{
+  
+  /*! position: absolute; */
+  right: 0px;
+  top: 127px;
+}
+/* Why */
+main section#why{
+  
+  background-image: url(../img/woman.png
+), url(https://images.unsplash.com/photo-1740676176355-509de9e2654c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: 41%, cover;
+  background-position-x: right, center;
+  background-position-y: bottom, center;
+}
+main section#why div{
+  
+  height: 906px;
+}
+main section#why div h2{
+  
+  text-align: center;
+  font-weight: normal;
+}
+main section#why div h2 span{
+  
+}
+main section#why div ul{
+  
+}
+main section#why div ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+main section#why div ul li h3{
+  
+  font-weight: bolder;
+}
+main section#why div ul li h3::before{
+  content: "";
+  width: 100px;
+  height: 94px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+main section#why div ul li:nth-child(1) h3::before{
+  
+  background-image: url(../img/svg/desktop-solid.svg);
+}
+main section#why div ul li p{
+  
+  text-align: center;
+}
