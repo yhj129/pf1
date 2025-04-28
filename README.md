@@ -1,4 +1,5 @@
-<h1 align="center">🎨 simplydesign 디자인 클론코딩</h1>
+<h1 align="center">🎨 simplydesign</h1>
+<h3 align="center">디자인 클론코딩</h3>
 
 <p align="center">
 🔗 <a href="https://simplydesign.kr/">원본사이트 바로가기</a>
