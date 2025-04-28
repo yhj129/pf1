@@ -3,7 +3,7 @@
 <p align="center">
 🔗 <a href="https://simplydesign.kr/">원본사이트 바로가기</a>
 </p>
-![image](https://github.com/user-attachments/assets/32082f67-e50e-402b-9b24-fb9041b56614)
+[image](https://github.com/user-attachments/assets/32082f67-e50e-402b-9b24-fb9041b56614)
 
 
 
